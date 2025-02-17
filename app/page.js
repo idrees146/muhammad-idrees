@@ -64,15 +64,17 @@ export default function Home() {
 
 
           <div className="buttons my-10 flex flex-col lg:flex-row gap-5 lg:gap-10 items-center justify-center lg:justify-start">
-            <button className="bg-pink-600 hover:bg-pink-500 cursor-pointer text-white rounded-md py-3 px-6 flex items-center gap-4">
+         <a href="/cv.pdf"  download="Muhammad_Idrees_Resume.pdf">    <button className="bg-pink-600 hover:bg-pink-500 cursor-pointer text-white rounded-md py-3 px-6 flex items-center gap-4">
               Resume <span><img src="download.svg" className="w-6" alt="Download" /></span>
             </button>
 
+            </a>
+
             <div className="icons flex gap-4 items-center">
-              <img className="hover:scale-125 w-10 transition cursor-pointer" src="face.svg" alt="Facebook" />
-              <img className="hover:scale-125 w-10 transition cursor-pointer" src="git.svg" alt="GitHub" />
-              <img className="hover:scale-125 w-10 transition cursor-pointer" src="insta.svg" alt="Instagram" />
-              <img className="hover:scale-125 w-10 transition cursor-pointer" src="linkedin.svg" alt="LinkedIn" />
+             <a href="https://www.facebook.com/muhammadidreesss" target = "blank">  <img className="hover:scale-125 w-10 transition cursor-pointer" src="face.svg" alt="Facebook" /></a>
+             <a href="https://github.com/idrees146" target = "blank" >  <img className="hover:scale-125 w-10 transition cursor-pointer" src="git.svg" alt="GitHub" /></a>
+             <a href="https://www.instagram.com/muhammadidrees_khan1?igsh=MTNiZnQ2bndsNnZveA==" target = "blank">  <img className="hover:scale-125 w-10 transition cursor-pointer" src="insta.svg" alt="Instagram" /></a>
+             <a href="https://www.linkedin.com/in/muhammad-idrees-23678629b/" target = "blank">  <img className="hover:scale-125 w-10 transition cursor-pointer" src="linkedin.svg" alt="LinkedIn" /></a>
             </div>
           </div>
         </div>
@@ -429,16 +431,6 @@ export default function Home() {
 
 
 
-
-
-
-
-
-
-
-
-
-
             </div>
             <div className={`box3  ${active === "SEO" ? 'block' : 'hidden'}  p-4 absolute  md:w-[1000px] md:h-[560px]     rounded-xl`}>
 
@@ -458,6 +450,7 @@ export default function Home() {
         </div>
 
       </div>
+
 
 
       <footer className="h-96  bg-slate-900">
@@ -481,6 +474,7 @@ export default function Home() {
 
 
 
+
 <div className="flex    cursor-pointer group gap-4 my-6 text-white items-center">
 
 <img src="location.svg" width={35} alt="" />
@@ -495,4 +489,7 @@ export default function Home() {
     </>
   );
 
+
 }
+
+
