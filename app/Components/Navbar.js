@@ -47,10 +47,10 @@ const Navbar = () => {
           isOpen ? 'flex' : 'hidden'
         } flex-col md:flex md:flex-row md:items-center md:gap-6 absolute md:static top-20 left-0 w-full md:w-auto bg-gray-200 md:bg-transparent transition-all md:transition-none`}
       >
-        <button  className="cursor-pointer hover:scale-105 font-bold hover:text-pink-500 transition-all text-center py-4 md:py-0">My Story</button>
+        <button  onClick ={() => scrollToSection("story")} className="cursor-pointer hover:scale-105 font-bold hover:text-pink-500 transition-all text-center py-4 md:py-0">My Story</button>
         <button onClick={()=>scrollToSection("services")} className="cursor-pointer hover:scale-105 font-bold hover:text-pink-500 transition-all text-center py-4 md:py-0">Services</button>
         <button onClick={()=>scrollToSection("Project")} className="cursor-pointer hover:scale-105 font-bold hover:text-pink-500 transition-all text-center py-4 md:py-0">Projects</button>
-        <button className="cursor-pointer hover:scale-105 font-bold hover:text-pink-500 transition-all text-center py-4 md:py-0">Blog</button>
+        <button className="cursor-pointer hover:scale-105 font-bold hover:text-pink-500 transition-all text-center py-4 md:py-0">Testimonials</button>
 
         <li className="text-center py-4 md:py-0">
           <button className="py-2 px-4 rounded-md bg-pink-700 hover:bg-pink-500 text-white">Hire me</button>

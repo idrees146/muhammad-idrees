@@ -37,17 +37,17 @@ export default function Home() {
 
 
 
-      <div className="main bg-gray-100 pt-32 md:pb-20  flex flex-col lg:flex-row justify-center lg:gap-28 px-6 lg:px-0">
+      <div className="main bg-gray-100 pt-28 md:pb-20  flex flex-col lg:flex-row justify-center lg:gap-28 px-6 lg:px-0">
         <div className="left mt-10 lg:mt-24 text-center lg:text-left">
           <h1 className="text-3xl font-bold text-gray-500">I am Idrees</h1>
-          <h2 className="text-4xl md:text-5xl font-bold text-pink-700 leading-tight my-4 max-w-md mx-auto lg:mx-0">
-            <span className="text-gray-700">The Coolest </span>
+
+            <span className="text-gray-700 text-4xl md:text-5xl font-bold  leading-tight my-4 max-w-md mx-auto lg:mx-0">The Coolest Web </span>
        
             {''}
-
+<h2 className="text-pink-700 text-4xl md:text-5xl font-bold  leading-tight my-4 max-w-md mx-auto lg:mx-0"> 
             <Typewriter
 
-              words={['Web Designer', 'SEO Expert', 'Web Developer']}
+              words={['Designer', 'Developer']}
               loop={5} // Loop 5 times, set to 0 for infinite
               cursor
               cursorStyle="|"
@@ -56,14 +56,24 @@ export default function Home() {
               delaySpeed={2000} // Delay between words
 
             />
-          </h2>
+            </h2>
+        
           <p className="text-gray-700 text-lg  md:text-lg leading-8 max-w-md mx-auto lg:mx-0">
             A passionate and Enthusiastic Web Developer and Designer who designs and develops stunning web applications using <strong>MERN</strong> and <strong>NEXT.js.</strong>
           </p>
 
+          <div className="text-gray-700 text-md hidden md:flex items-center gap-4  md:text-md leading-8 mt-6 max-w-md mx-auto lg:mx-0">
+            
+           
+           <img width={10} src = "dot.svg"/>
+           <span>Available for Jobs and Internships </span>
+      
+
+             </div>
 
 
-          <div className="buttons my-10 flex flex-col lg:flex-row gap-5 lg:gap-10 items-center justify-center lg:justify-start">
+
+          <div className="buttons mb-10 mt-4 flex flex-col lg:flex-row gap-5 lg:gap-10 items-center justify-center lg:justify-start">
          <a href="/cv.pdf"  download="Muhammad_Idrees_Resume.pdf">    <button className="bg-pink-600 hover:bg-pink-500 cursor-pointer text-white rounded-md py-3 px-6 flex items-center gap-4">
               Resume <span><img src="download.svg" className="w-6" alt="Download" /></span>
             </button>
@@ -145,7 +155,7 @@ export default function Home() {
 
       </div>
 
-      <div className="story bg-gray-100 flex flex-col-reverse lg:flex-row gap-10 lg:gap-28 mt-36 justify-center px-6 lg:px-0">
+      <div id = "story" className="story bg-gray-100 flex flex-col-reverse lg:flex-row gap-10 lg:gap-28 mt-36 justify-center px-6 lg:px-0">
         <div className="left flex justify-center lg:justify-start">
           <img src="idrees.png" className="w-64 h-64 md:w-96 md:h-96 rounded-full" alt="Idrees" />
         </div>
@@ -180,7 +190,7 @@ export default function Home() {
           >
 
 
-            <p className="my-8 text-lg  leading-8">
+            <p className="my-8 md:text-lg text-md leading-8">
               This is Muhammad Idrees, a passionate Web Developer, always busy creating fun and interesting projects. My story begins the day I started studying Software Engineering at COMSATS University Islamabad.
             </p>
 
@@ -194,7 +204,7 @@ export default function Home() {
             transition={{ duration: 0.7, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.2 }}
           >
-            <p className="my-8 text-lg  leading-8">
+            <p className="my-8 md:text-lg  text-md leading-8">
               That day was a decisive one to pave the way for my aspirations, envisioning where I want to see myself in the next 10 years. Web Development is something that truly immerses me; building attractive layouts and adding functionalities is more than fun for me.
             </p>
 
