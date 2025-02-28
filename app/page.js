@@ -74,7 +74,7 @@ export default function Home() {
 
 
           <div className="buttons mb-10 mt-4 flex flex-col lg:flex-row gap-5 lg:gap-10 items-center justify-center lg:justify-start">
-         <a href="/cv.pdf"  download="Muhammad_Idrees_Resume.pdf">    <button className="bg-pink-600 hover:bg-pink-500 cursor-pointer text-white rounded-md py-3 px-6 flex items-center gap-4">
+         <a href="/resume.pdf"  download="Muhammad_Idrees_Resume.pdf">    <button className="bg-pink-600 hover:bg-pink-500 cursor-pointer text-white rounded-md py-3 px-6 flex items-center gap-4">
               Resume <span><img src="download.svg" className="w-6" alt="Download" /></span>
             </button>
 
