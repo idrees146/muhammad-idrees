@@ -24,27 +24,29 @@ export default function Home() {
 
 
 
-let slides = [
+  let slides = [
 
 
-  "hire.png",
+    {
+      name: "Muhammad Shiraz",
+      image: "idrees.png",
+      message: "One of the best Developer that i Have seen in my Entire Life. Hats off to his talent"
+    },
 
 
+    {
+      name: "Umer Nisar",
+      image: "idrees.png",
+      message: "One of the best Developer that i Have seen in my Entire Life. Hats off to his talent"
+    },
 
-  "invenexus.png",
+    {
+      name: "Asad Naeem Malik",
+      image: "idrees.png",
+      message: "One of the best Developer that i Have seen in my Entire Life. Hats off to his talent"
+    },
 
-
-"generous.png",
-
-  "hire.png",
-
-
-
-  "invenexus.png",
-
-
-  "generous.png"
-]
+  ]
 
 
 
@@ -62,10 +64,10 @@ let slides = [
         <div className="left mt-10 lg:mt-24 text-center lg:text-left">
           <h1 className="text-3xl font-bold text-gray-500">I am Idrees</h1>
 
-            <span className="text-gray-700 text-4xl md:text-5xl font-bold  leading-tight my-4 max-w-md mx-auto lg:mx-0">The Coolest Web </span>
-       
-            {''}
-<h2 className="text-pink-700 text-4xl md:text-5xl font-bold  leading-tight my-4 max-w-md mx-auto lg:mx-0"> 
+          <span className="text-gray-700 text-4xl md:text-5xl font-bold  leading-tight my-4 max-w-md mx-auto lg:mx-0">The Coolest Web </span>
+
+          {''}
+          <h2 className="text-pink-700 text-4xl md:text-5xl font-bold  leading-tight my-4 max-w-md mx-auto lg:mx-0">
             <Typewriter
 
               words={['Designer', 'Developer']}
@@ -77,35 +79,35 @@ let slides = [
               delaySpeed={2000} // Delay between words
 
             />
-            </h2>
-        
+          </h2>
+
           <p className="text-gray-700 text-lg  md:text-lg leading-8 max-w-md mx-auto lg:mx-0">
             A passionate and Enthusiastic Web Developer and Designer who designs and develops stunning web applications using <strong>MERN</strong> and <strong>NEXT.js.</strong>
           </p>
 
           <div className="text-gray-700 text-md hidden md:flex items-center gap-4  md:text-md leading-8 mt-6 max-w-md mx-auto lg:mx-0">
-            
-           
-           <img width={10} src = "dot.svg"/>
-           <span>Available for Jobs and Internships </span>
-      
 
-             </div>
+
+            <img width={10} src="dot.svg" />
+            <span>Available for Jobs and Internships </span>
+
+
+          </div>
 
 
 
           <div className="buttons mb-10 mt-4 flex flex-col lg:flex-row gap-5 lg:gap-10 items-center justify-center lg:justify-start">
-         <a href="/resume.pdf"  download="Muhammad_Idrees_Resume.pdf">    <button className="bg-pink-600 hover:bg-pink-500 cursor-pointer text-white rounded-md py-3 px-6 flex items-center gap-4">
+            <a href="/resume.pdf" download="Muhammad_Idrees_Resume.pdf">    <button className="bg-pink-600 hover:bg-pink-500 cursor-pointer text-white rounded-md py-3 px-6 flex items-center gap-4">
               Resume <span><img src="download.svg" className="w-6" alt="Download" /></span>
             </button>
 
             </a>
 
             <div className="icons flex gap-4 items-center">
-             <a href="https://www.facebook.com/muhammadidreesss" target = "blank">  <img className="hover:scale-125 w-10 transition cursor-pointer" src="face.svg" alt="Facebook" /></a>
-             <a href="https://github.com/idrees146" target = "blank" >  <img className="hover:scale-125 w-10 transition cursor-pointer" src="git.svg" alt="GitHub" /></a>
-             <a href="https://www.instagram.com/muhammadidrees_khan1?igsh=MTNiZnQ2bndsNnZveA==" target = "blank">  <img className="hover:scale-125 w-10 transition cursor-pointer" src="insta.svg" alt="Instagram" /></a>
-             <a href="https://www.linkedin.com/in/muhammad-idrees-23678629b/" target = "blank">  <img className="hover:scale-125 w-10 transition cursor-pointer" src="linkedin.svg" alt="LinkedIn" /></a>
+              <a href="https://www.facebook.com/muhammadidreesss" target="blank">  <img className="hover:scale-125 w-10 transition cursor-pointer" src="face.svg" alt="Facebook" /></a>
+              <a href="https://github.com/idrees146" target="blank" >  <img className="hover:scale-125 w-10 transition cursor-pointer" src="git.svg" alt="GitHub" /></a>
+              <a href="https://www.instagram.com/muhammadidrees_khan1?igsh=MTNiZnQ2bndsNnZveA==" target="blank">  <img className="hover:scale-125 w-10 transition cursor-pointer" src="insta.svg" alt="Instagram" /></a>
+              <a href="https://www.linkedin.com/in/muhammad-idrees-23678629b/" target="blank">  <img className="hover:scale-125 w-10 transition cursor-pointer" src="linkedin.svg" alt="LinkedIn" /></a>
             </div>
           </div>
         </div>
@@ -176,7 +178,7 @@ let slides = [
 
       </div>
 
-      <div id = "story" className="story md:py-20 bg-gray-100 flex flex-col-reverse lg:flex-row gap-10 lg:gap-28 mt-36 justify-center px-6 lg:px-0">
+      <div id="story" className="story md:py-20 bg-gray-100 flex flex-col-reverse lg:flex-row gap-10 lg:gap-28 mt-36 justify-center px-6 lg:px-0">
         <div className="left flex justify-center lg:justify-start">
           <img src="idrees.png" className="w-64 h-64 md:w-96 md:h-96 rounded-full" alt="Idrees" />
         </div>
@@ -240,7 +242,7 @@ let slides = [
 
 
 
-      <div  className="services mt-36 px-6 lg:px-0">
+      <div className="services mt-36 px-6 lg:px-0">
         <h2 id="services" className="text-3xl md:text-4xl font-bold text-gray-700 text-center">
           My Quality <span className="text-pink-600">Services</span>
         </h2>
@@ -294,7 +296,7 @@ let slides = [
 
 
 
-      <div className="skills mt-28 text-gray-700 text-center px-6 lg:px-0">
+      <div className="skills mt-36  text-gray-700 text-center px-6 lg:px-0">
         <h2 className="text-3xl md:text-4xl font-bold"> Languages That I <span className="text-pink-500">Speak</span>
         </h2>
         <p className="my-4 max-w-lg mx-auto text-lg ">
@@ -355,12 +357,12 @@ let slides = [
 
 
         <div className="options my-10">
-          <ul className="flex items-center  md:w-[400px] rounded-xl mx-auto p-2 bg-gray-200 justify-center gap-7">
+          <ul className="flex items-center  md:w-[400px] rounded-xl mx-auto p-2 bg-gray-200 justify-center gap-2 md:gap-7">
 
 
             <button onClick={() => activeButton("Development")} className={`md:p-3 p-2 ${active === "Development" ? 'bg-pink-600 text-white' : 'text-black'} transition-all duration-300 rounded-xl`} >Development</button>
             <button onClick={() => activeButton("Designing")} className={`md:p-3 p-2 ${active === "Designing" ? 'bg-pink-600 text-white' : 'text-black'} transition-all duration-300 rounded-xl`}>Designing</button>
-            <button onClick={() => activeButton("SEO")} className={`md:p-3 p-2 ${active === "SEO" ? 'bg-pink-600 text-white' : 'text-black'} transition-all duration-300 rounded-xl`} >SEO</button>
+            <button onClick={() => activeButton("SEO")} className={`md:p-3 p-2 ${active === "SEO" ? 'bg-pink-600 text-white' : 'text-black'} transition-all duration-300 rounded-xl`} >SEO Writing</button>
           </ul>
         </div>
 
@@ -445,7 +447,7 @@ let slides = [
 
 
                 </div>
-             
+
 
               </div>
 
@@ -484,12 +486,15 @@ let slides = [
 
 
 
-<div className="testimonials bg-green-700 pt-11 m-auto w-[60%]">
+      <div id="testimonials" className="  text-gray-700 mt-36 mb-28  pt-11 m-auto w-[80vw] md:w-[60%]">
+
+        <h2 className="text-3xl text-center  md:text-4xl font-bold"> <span className="text-pink-600">Testimonials </span> </h2>
+        <p className="text-center mb-10">Here is what other clients say about me</p>
 
 
-<Carousel slides = {slides} />
+        <Carousel slides={slides} />
 
-</div>
+      </div>
 
 
 
@@ -499,34 +504,34 @@ let slides = [
 
       <footer className="h-96  bg-slate-900">
 
-<div className="contact pt-24  pl-10 md:pl-20">
+        <div className="contact pt-24  pl-10 md:pl-20">
 
-<div className="flex cursor-pointer group gap-4 my-6 text-white items-center">
+          <div className="flex cursor-pointer group gap-4 my-6 text-white items-center">
 
-<img src="whatsapp.svg" width={35} alt="" />
-<p className="group-hover:underline">+923179619344</p>
+            <img src="whatsapp.svg" width={35} alt="" />
+            <p className="group-hover:underline">+923179619344</p>
 
-</div>
+          </div>
 
-<div className="flex cursor-pointer group gap-4 my-6 text-white items-center">
+          <div className="flex cursor-pointer group gap-4 my-6 text-white items-center">
 
-<img src="mail.svg" width={35} alt="" />
-<p className="group-hover:underline" >muhammadidr1122@gmail.com</p>
+            <img src="mail.svg" width={35} alt="" />
+            <p className="group-hover:underline" >muhammadidr1122@gmail.com</p>
 
-</div>
-
-
+          </div>
 
 
 
-<div className="flex    cursor-pointer group gap-4 my-6 text-white items-center">
 
-<img src="location.svg" width={35} alt="" />
-<p className="group-hover:underline">Lane 10, Hostel city, Park Road, Islamabad, Pakistan</p>
 
-</div>
+          <div className="flex    cursor-pointer group gap-4 my-6 text-white items-center">
 
-</div>
+            <img src="location.svg" width={35} alt="" />
+            <p className="group-hover:underline">Lane 10, Hostel city, Park Road, Islamabad, Pakistan</p>
+
+          </div>
+
+        </div>
 
 
       </footer>
