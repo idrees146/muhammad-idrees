@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { Typewriter } from 'react-simple-typewriter'
 import { useState } from "react";
+import Carousel from "./Components/Carousel";
 
 
 
@@ -23,7 +24,27 @@ export default function Home() {
 
 
 
+let slides = [
 
+
+  "hire.png",
+
+
+
+  "invenexus.png",
+
+
+"generous.png",
+
+  "hire.png",
+
+
+
+  "invenexus.png",
+
+
+  "generous.png"
+]
 
 
 
@@ -127,7 +148,7 @@ export default function Home() {
           </p>
 
         </motion.div>
-        <div className="box flex md:w-3/4 md:mx-auto flex-wrap justify-center gap-6 lg:gap-7">
+        <div className="box flex md:w-[90vw] md:mx-auto flex-wrap justify-center gap-6 lg:gap-7">
           {[
             { name: "NEXT JS", img: "next.png" },
             { name: "React JS", img: "reactjs.svg" },
@@ -155,7 +176,7 @@ export default function Home() {
 
       </div>
 
-      <div id = "story" className="story bg-gray-100 flex flex-col-reverse lg:flex-row gap-10 lg:gap-28 mt-36 justify-center px-6 lg:px-0">
+      <div id = "story" className="story md:py-20 bg-gray-100 flex flex-col-reverse lg:flex-row gap-10 lg:gap-28 mt-36 justify-center px-6 lg:px-0">
         <div className="left flex justify-center lg:justify-start">
           <img src="idrees.png" className="w-64 h-64 md:w-96 md:h-96 rounded-full" alt="Idrees" />
         </div>
@@ -460,6 +481,19 @@ export default function Home() {
         </div>
 
       </div>
+
+
+
+<div className="testimonials bg-green-700 pt-11 m-auto w-[60%]">
+
+
+<Carousel slides = {slides} />
+
+</div>
+
+
+
+
 
 
 
