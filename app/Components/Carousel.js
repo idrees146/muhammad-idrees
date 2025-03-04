@@ -49,11 +49,11 @@ export default function Carousel({ slides }) {
 
     }
 
-    return (<div className="overflow-hidden group relative">
+    return (<div className="overflow-hidden relative">
 
 
 
-        <div className={`flex  group-hover:brightness-50 transition ease-out duration-300`}
+        <div className={`flex   transition ease-out duration-300`}
 
             style={{
                 transform: `translateX(-${current * 100}%)`
@@ -64,10 +64,25 @@ export default function Carousel({ slides }) {
             {slides.map((s, index) => {
 
 
-                return <div key={index} className="min-w-full bg-gray-200 rounded-xl flex flex-col items-center text-center p-5">
-                    <img src={s.image} alt={s.name} className="w-56 h-52 rounded-full  mb-6" />
-                    <h3 className="text-lg font-bold mb-2 mt-4">{s.name}</h3>
-                    <p className="text-gray-600 mb-10">{s.message}</p>
+                return <div key={index} className="min-w-full md:h-96 border border-indigo-800 rounded-xl flex flex-col md:flex-row justify-center md:gap-8 items-center text-center p-5">
+
+
+                    <img src={s.image} alt={s.name} className="md:w-56  md:h-72 w-40 h-52 rounded-lg pt-2  px-2 bg-indigo-200 md:mb-6" />
+
+                    <div className="md:w-1/2">
+
+
+                        <img className="md:w-10 w-5 md:my-7" src="comma.svg" alt="" />
+
+
+
+                        <p className="text-gray-600  my-2">{s.message}</p>
+                        <h3 className="text-lg text-blue-900 font-bold mb-6 md:mb-2 mt-4 ">{s.name}</h3>
+
+
+                    </div>
+
+
                 </div>
 
 
@@ -79,13 +94,13 @@ export default function Carousel({ slides }) {
         <div className="absolute top-0 h-full w-full flex justify-between items-center">
 
 
-            <button onClick={previousSlide} className="p-2 ml-2 bg-gray-300 rounded-full">
+            <button onClick={previousSlide} className="p-2 ml-2 hidden md:block bg-gray-300 rounded-full">
                 <img className="w-5" src="left.svg" alt="" />
             </button>
 
 
 
-            <button onClick={nextSlide} className="p-2 mr-2 bg-gray-300 rounded-full">
+            <button onClick={nextSlide} className="p-2 mr-2 hidden md:block bg-gray-300 rounded-full">
                 <img className="w-5" src="right.svg" alt="" />
             </button>
 
@@ -100,7 +115,7 @@ export default function Carousel({ slides }) {
                     setCurrent(i)
                 }} key={"Circle" + i}
 
-                    className={`cursor-pointer rounded-full w-3 h-3  ${i == current ? "bg-white" : "bg-gray-500"}`}>
+                    className={`cursor-pointer rounded-full w-3 h-3  ${i == current ? "bg-indigo-600" : "bg-indigo-400"}`}>
 
 
 

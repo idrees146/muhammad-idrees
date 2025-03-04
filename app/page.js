@@ -28,22 +28,22 @@ export default function Home() {
 
 
     {
-      name: "Muhammad Shiraz",
-      image: "idrees.png",
-      message: "One of the best Developer that i Have seen in my Entire Life. Hats off to his talent"
+      name: "Tyler chris",
+      image: "random2.png",
+      message: "Highly Inspired by the Quality of work Muhammad Provided. Highly Recomended Developer for NEXT.js"
     },
 
 
     {
-      name: "Umer Nisar",
-      image: "idrees.png",
-      message: "One of the best Developer that i Have seen in my Entire Life. Hats off to his talent"
+      name: "John Alex",
+      image: "random1.png",
+      message: "Muhammad Provided me excellent quality work by Designing a stunning portfolio website for me"
     },
 
     {
       name: "Asad Naeem Malik",
-      image: "idrees.png",
-      message: "One of the best Developer that i Have seen in my Entire Life. Hats off to his talent"
+      image: "asad.png",
+      message: "Muhammad Idrees understood my requirements properly and delivered high quality work in the least amount of time."
     },
 
   ]
@@ -368,11 +368,11 @@ export default function Home() {
 
 
         <div className="flex pr mt-[370px] md:mt-4 justify-center">
-          <div className={`flex justify-center  md:w-[1000px] md:h-[560px] rounded-xl items-center  gap-4`}>
+          <div className={`flex justify-center  md:w-[1000px] md:h-[560px] rounded-xl items-center  gap-0`}>
             <div className={`box1    ${active === "Development" ? 'block' : 'hidden'}  p-4 absolute w-full  md:w-[1000px] md:h-[560px]    rounded-xl`}>
 
               <div className="md:flex   md:h-[50%] mb-4 md:justify-center">
-                <div className="box w-[85vw] mx-auto relative mb-6 md:mb-2 h-[200px] md:h-full rounded-xl group duration-300 transition-all  md:mx-4 border border-black  md:w-[45%]  ">
+                <div className="box w-[85vw] mx-auto relative mb-6 md:mb-2 h-[200px] md:h-full rounded-xl group duration-300 transition-all  md:mx-4   md:w-[40%]  ">
 
                   <img src="invenexus.png" className="group-hover:brightness-[20%] object-cover rounded-xl h-full transition-all duration-300 w-full " alt="" />
 
@@ -393,7 +393,7 @@ export default function Home() {
                   </div>
 
                 </div>
-                <div className="box relative w-[85vw] mx-auto transition-all h-[200px] md:h-full duration-300 group rounded-xl border border-black  md:w-[45%]  ">
+                <div className="box relative w-[85vw] mx-auto transition-all h-[200px] md:h-full duration-300 group rounded-xl    md:w-[40%]  ">
 
 
                   <img src="hire.png" className="group-hover:brightness-[20%] object-fill rounded-xl h-full transition-all duration-300 w-full " alt="" />
@@ -422,7 +422,7 @@ export default function Home() {
 
               <div className="md:flex  md:h-[50%] mb-4 justify-center">
 
-                <div className="box w-[85vw] mx-auto h-[200px] md:h-full relative md:mx-4 transition-all duration-300 group rounded-xl border border-black  md:w-[45%]  ">
+                <div className="box w-[85vw] mx-auto h-[200px] md:h-full relative md:mx-4 transition-all duration-300 group rounded-xl md:w-[40%]  ">
 
 
 
@@ -489,7 +489,7 @@ export default function Home() {
       <div id="testimonials" className="  text-gray-700 mt-36 mb-28  pt-11 m-auto w-[80vw] md:w-[60%]">
 
         <h2 className="text-3xl text-center  md:text-4xl font-bold"> <span className="text-pink-600">Testimonials </span> </h2>
-        <p className="text-center mb-10">Here is what other clients say about me</p>
+        <p className="text-center mt-4 mb-10">Here is what other clients say about services that I have provided.</p>
 
 
         <Carousel slides={slides} />
