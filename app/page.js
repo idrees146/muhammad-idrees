@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Typewriter } from 'react-simple-typewriter'
 import { useState } from "react";
 import Carousel from "./Components/Carousel";
+import Projects from "./Components/Projects";
 
 
 
@@ -332,155 +333,19 @@ export default function Home() {
       </div>
 
 
+      {/* Projects  */}
 
 
       <div id="Project" className="projects mt-36 mb-96 md:mb-10 px-6 lg:px-0">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-700 text-center">
-          My Recent <span className="text-pink-600">Work</span>
-          <Typewriter
 
-            words={[]}
-            loop={5} // Loop 5 times, set to 0 for infinite
-            cursor
-            cursorStyle="|"
-            typeSpeed={70}
-            deleteSpeed={50}
-            delaySpeed={2000} // Delay between words
 
-          />
-        </h2>
-        <p className="text-center my-4 text-lg  max-w-lg mx-auto">
-          Here are some of the most recent projects that I have completed in different domains.
-        </p>
+        <h2 className="text-3xl text-center text-gray-700  md:text-4xl font-bold"> Recent<span className="text-pink-600"> Projects </span> </h2>
+        <p className="text-center mt-4 ">Here are some of my recent projects completed in Different domains</p>
 
 
+        <Projects />
 
 
-        <div className="options my-10">
-          <ul className="flex items-center  md:w-[400px] rounded-xl mx-auto p-2 bg-gray-200 justify-center gap-2 md:gap-7">
-
-
-            <button onClick={() => activeButton("Development")} className={`md:p-3 p-2 ${active === "Development" ? 'bg-pink-600 text-white' : 'text-black'} transition-all duration-300 rounded-xl`} >Development</button>
-            <button onClick={() => activeButton("Designing")} className={`md:p-3 p-2 ${active === "Designing" ? 'bg-pink-600 text-white' : 'text-black'} transition-all duration-300 rounded-xl`}>Designing</button>
-            <button onClick={() => activeButton("SEO")} className={`md:p-3 p-2 ${active === "SEO" ? 'bg-pink-600 text-white' : 'text-black'} transition-all duration-300 rounded-xl`} >SEO Writing</button>
-          </ul>
-        </div>
-
-
-        <div className="flex pr mt-[370px] md:mt-4 justify-center">
-          <div className={`flex justify-center  md:w-[1000px] md:h-[560px] rounded-xl items-center  gap-0`}>
-            <div className={`box1    ${active === "Development" ? 'block' : 'hidden'}  p-4 absolute w-full  md:w-[1000px] md:h-[560px]    rounded-xl`}>
-
-              <div className="md:flex   md:h-[50%] mb-4 md:justify-center">
-                <div className="box w-[85vw] mx-auto relative mb-6 md:mb-2 h-[200px] md:h-full rounded-xl group duration-300 transition-all  md:mx-4   md:w-[40%]  ">
-
-                  <img src="invenexus.png" className="group-hover:brightness-[20%] object-cover rounded-xl h-full transition-all duration-300 w-full " alt="" />
-
-                  <div className="title absolute inset-x-0 top-4 md:top-10 flex flex-col gap-4 items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <h3 className="text-3xl font-bold">InveNexus</h3>
-                    <p className="text-xl hidden md:block">An Inventory Management System</p>
-
-
-                    <div className="buttons absolute inset-x-0 top-24 md:top-32 flex justify-center items-center gap-6 space-y-3 opacity-0 group-hover:opacity-100 duration-300 transition-all">
-
-
-                      <button className="hover:scale-110 transition duration-300 p-2  rounded-full w-14 bg-gray-200"><img src="linki.svg" className=" hover:rotate-45 transition-all duration-300" alt="" /></button>
-                      <button className="hover:scale-110 transition duration-300 p-2 rounded-full w-14 bg-gray-200"><img src="guthib.svg" alt="" /></button>
-                      <button className="hover:scale-110 transition duration-300 p-2 rounded-full w-14 bg-gray-200"><img src="doc.svg" alt="" /></button>
-
-
-                    </div>
-                  </div>
-
-                </div>
-                <div className="box relative w-[85vw] mx-auto transition-all h-[200px] md:h-full duration-300 group rounded-xl    md:w-[40%]  ">
-
-
-                  <img src="hire.png" className="group-hover:brightness-[20%] object-fill rounded-xl h-full transition-all duration-300 w-full " alt="" />
-
-                  <div className="title absolute inset-x-0 top-4 md:top-10 flex flex-col gap-4 items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <h3 className="text-3xl font-bold">HireTask</h3>
-                    <p className="text-xl hidden md:block">A simple Job Board</p>
-
-
-                    <div className="buttons absolute inset-x-0 top-24 md:top-32 flex justify-center items-center gap-6 space-y-3 opacity-0 group-hover:opacity-100 duration-300 transition-all">
-
-
-                      <button className="hover:scale-110 transition duration-300 p-2  rounded-full w-14 bg-gray-200"><img src="linki.svg" className=" hover:rotate-45 transition-all duration-300" alt="" /></button>
-                      <button className="hover:scale-110 transition duration-300 p-2 rounded-full w-14 bg-gray-200"><img src="guthib.svg" alt="" /></button>
-                      <button className="hover:scale-110 transition duration-300 p-2 rounded-full w-14 bg-gray-200"><img src="doc.svg" alt="" /></button>
-
-
-                    </div>
-                  </div>
-
-
-
-
-                </div>
-              </div>
-
-              <div className="md:flex  md:h-[50%] mb-4 justify-center">
-
-                <div className="box w-[85vw] mx-auto h-[200px] md:h-full relative md:mx-4 transition-all duration-300 group rounded-xl md:w-[40%]  ">
-
-
-
-                  <img src="generous.png" className="group-hover:brightness-[20%] object-fill rounded-xl h-full transition-all duration-300 w-full " alt="" />
-
-                  <div className="title absolute inset-x-0 top-4 md:top-10 flex flex-col gap-4 items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <h3 className="text-3xl font-bold">Mr. Generous</h3>
-                    <p className="text-xl hidden md:block">Now you can Donate to Your NGO's</p>
-
-
-                    <div className="buttons absolute inset-x-0 top-24 md:top-32 flex justify-center items-center gap-6 space-y-3 opacity-0 group-hover:opacity-100 duration-300 transition-all">
-
-
-                      <button className="hover:scale-110 transition duration-300 p-2  rounded-full w-14 bg-gray-200"><img src="linki.svg" className=" hover:rotate-45 transition-all duration-300" alt="" /></button>
-                      <button className="hover:scale-110 transition duration-300 p-2 rounded-full w-14 bg-gray-200"><img src="guthib.svg" alt="" /></button>
-                      <button className="hover:scale-110 transition duration-300 p-2 rounded-full w-14 bg-gray-200"><img src="doc.svg" alt="" /></button>
-
-
-                    </div>
-                  </div>
-
-
-
-                </div>
-
-
-              </div>
-
-            </div>
-            <div className={`box2  ${active === "Designing" ? 'block' : 'hidden'}   p-4 absolute  md:w-[1000px] md:h-[560px]     rounded-xl`}>
-
-
-
-
-
-
-
-
-
-
-
-            </div>
-            <div className={`box3  ${active === "SEO" ? 'block' : 'hidden'}  p-4 absolute  md:w-[1000px] md:h-[560px]     rounded-xl`}>
-
-
-
-
-
-
-
-
-
-
-
-
-            </div>
-          </div>
-        </div>
 
       </div>
 
